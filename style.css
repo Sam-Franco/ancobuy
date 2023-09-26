@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    background: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.container .formBox{
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px 0 10px 5px;
+    width: 350px;
+    padding: 30px;
+    box-shadow: 5px 1px 10px rgba(0,0,0,0.5);
+}
+.container .formBox p{
+    color: rgba(255,255,255,0.8);
+    font-weight: 800;
+    font-size: 18px;
+    margin: 20px auto;
+}
+.container .formBox .box{
+    background: rgba(255,255,255,0.2);
+    width: 100%;
+    border-radius: 30px;
+    padding: 8px;
+}
+.container .formBox .box input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+}
+.container .formBox .box ::placeholder{
+    color: rgba(255,255,255,0.8);
+}
+.container .formBox .imgBox {
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    margin: 15px auto;
+}
+.container .formBox .imgBox img{
+    padding: 5px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 4px;
+}
+.open{
+    padding: 15px;
+    height: 200px;
+}
+.container .formBox .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .formBox .btn button{
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: 5px 1px 10px rgba(0,0,0,0.5);
+    border-radius: 30px;
+    padding: 11px 10px;
+    color: rgba(255,255,255,0.8);
+    font-weight: 700;
+    transition: transform 0.5s;
+}
+.container .formBox .btn button:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.error{
+    animation: shake 0.1s linear forwards 20;
+    border: 2px solid #ea1538;
+}
+.error::placeholder{
+    color: #ea1538;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
